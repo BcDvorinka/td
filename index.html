@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="cs" data-lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="icon" type="image/x-icon" href="./assets/profile-pic-2.png">
+  </head>
+  <body>
+    <div id="custom-scrollbar" class="scrollbar">
+      <div class="scroll-content"> 
+    <nav id="desktop-nav">
+      <div class="logo">
+        <img src="./assets/profile-pic.png" alt="Profilový obrázek">
+        Tomáš Dvořák
+      </div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">O mně</a></li>
+          <li><a href="#experience">Zkušenosti</a></li>
+          <li><a href="#projects">Projekty</a></li>
+          <li><a href="#certificates">Certifikáty</a></li>
+          <li><a href="#contact">Kontakt</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">
+        <img src="./assets/profile-pic.png" alt="Profilový obrázek">
+        Tomáš Dvořák
+      </div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">O mně</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Zkušenosti</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projekty</a></li>
+          <li><a href="#certificates" onclick="toggleMenu()">Certifikáty</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Kontakt</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Tomáš_Dvořák_pfp" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Ahoj, mé jméno je</p>
+        <h1 class="title">Tomáš Dvořák</h1>
+        <p class="section__text__p2">
+          <u>2D</u> Designer - <u>Photoshop, Lightroom</u><br>
+          Amatérský <u>Programátor</u><br>
+          Amatérský <u>Psycholog</u><br>
+          <u>White</u>-Hat-Hacker<br>
+          Učitel <u>Angličtiny</u><br>
+          <u>Fotograf</u><br>
+          <u>Střihač</u><br>
+        </p>
+        <div id="socials-container">
+
+          <a href="https://linkedin.com/in/tomáš-dvořák-542bb7294" target="_blank">
+            <img src="./assets/linkedin.png" alt="LinkedIn" class="icon" />
+          </a>
+          
+          <a href="https://github.com/BcDvorinka" target="_blank">
+            <img src="./assets/github.png" alt="Github" class="icon" />
+          </a>
+
+          <a href="https://www.youtube.com/@Bc.Dvorinka" target="_blank">
+            <img src="./assets/youtube.png" alt="Youtube" class="icon" />
+          </a>   
+
+          <a href="https://www.instagram.com/dv0rinka_/" target="_blank">
+            <img src="./assets/instagram.png" alt="Osobní Instagram" class="icon" />
+          </a>
+
+          <a href="https://www.instagram.com/dv0rinka_photos/" target="_blank">
+            <img src="./assets/instagram.png" alt="Profesionální Instagram" class="icon" />
+          </a>
+          
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Kdo jsem?</p>
+      <h1 class="title">O mně</h1>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Zkušenosti</h3>
+              <p>6+ let <br />v oboru IT</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Vzdělání</h3>
+              <p>Základní škola Staré Město<br />OAUH - 1.ročník</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              <li>Ahoj, mé jméno je <b>Tomáš Dvořák</b> a jak jste si již nejspíše všimli, věnuji se opravdu spoustu věcem.<br></li>
+
+              <li>Mé zálibi jako je <b>2D</b> design s programy jako <b>Photoshop a Lightroom</b> mi umožňují vyjádřit mou kreativitu a mé umění v tomto oboru.<br>
+              Photoshopu se věnuji sice jen teprve jeden rok, ale i takto krátká doba mi stačila na to si pro něj najít speciální místo v srdíčku.<br></li>
+
+              <li>Se stejnou vášní se zajímám také o <b>3D</b> design, kde využívám nástrojů jako <b>Unreal Engine 5 a Blender.</b><br>
+              Na to že jsem v těchto programech začal pracovat zhruba před týdnem, jsem se toho stihl naučit opravdu hodně a dokonce jsem dokázal i udělat takový menší film
+               (více v <u><i><a href="#projects">projektech</a></i></u>). Dokonce jsem i pomocí Blenderu již ušetřil 
+               <u><i><a href="https://www.cgtrader.com/3d-models/space/planet/earth-86k" target="_blank">250 dolarů</a></i></u> a to za 3D model Země.<br></li>
+
+              <li>Nadšeně se ponořuji i do světa amatérského <b>programování</b>, jako například právě teď a téže se zajímám se o <b>psychologii</b>,
+              a to i přes to že nejsem profesionálním psychologem.<br></li>
+
+              <li>Občas se pokouším o <b>režii filmů</b> (zatím pouze krátkometrážních), abych mohl sdělit své příběhy i v jiné formě než v té standartní (více v <u><i><a href="#projects">projektech</a></i></u>).<br></li>
+
+              <li>Kromě toho jsem <b>soukromým (😉) učitelem angličtiny</b>, dále se věnuji oborům jako <b>filmová produkce (kameraman), fotograf a střihač.</b><br>
+              Jako <b>střihač</b> se uplatňuji už něco přes 6 let. A za tu dobu jsem se toho spoustu naučil a hlavně jsem toho také spoustu sestříhal.<br>
+              Začínal jsem na programu <b>Kinemaster</b>, který to celé tak nějak odstartoval.
+               Po zhruba 3 letech jsem dostal svůj nynější počítač na kterém jsem přešel na program <b>Davinci Resolve</b>, ve kterém stříhám doteď a jsem s ním nadmíru spokojen.<br>
+              Momentálně pracuji jako střihač pro futsalový tým <u><b><a href="https://www.youtube.com/@SKUPOlomouc" target="_blank">SKUP Olomouc.</b></a></u> <br></li>
+              <li><b>Tak na co ještě čekáte? Neváhejte se ozvat, jsem připravený na jakékoliv nové výzvy!</b><br></li>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Co umím?</p>
+      <h1 class="title">Zkušenosti</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Jazyky</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>70%</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>70%</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>22%</p>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>Linux CMD</h3>
+                  <p>25%</p>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>C++</h3>
+                  <p>0%</p>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>Javascript</h3>
+                  <p>15%</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Programy</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>D. Resolve</h3>
+                  <p>99%</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Photoshop</h3>
+                  <p>80%</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Unreal E. 5</h3>
+                  <p>60%</p>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>Blender</h3>
+                  <p>30%</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+        <div class="text-container">
+          <p><li>Mé cíle jsou jednoznačné<br> 
+            ...naučit se všechny tyto jazyky a programy na <b>100%</b> a tím se dále posunovat směrem kupředu.<br>
+            ...udělat si co nejvíce specializovaných <b>certifikátů</b>, které mě také posunou o jistý kus dále.<br>
+            ...<b>prosadit se</b> na trhu práce a být žádaným člověkem u jakýchkoliv projektů.<br>
+            <br>
+            ...<b>jednoduše - čím víc toho budu umět, tím líp se budu cítit.</b><br>
+            ...<i>to je vše.</i><br></li></p>
+        </div>
+      </div>
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Co jsem udělal?</p>
+      <h1 class="title">Projekty</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Marián Goodman - <small>Antireklama ropa</small></h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://www.youtube.com/watch?v=yk0hnmP_VqY', '_blank');"
+              >
+                YouTube
+              </button>         
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://www.csfd.cz/film/1396428-marian-goodman-antireklama-ropa/', '_blank');"
+              >
+                CSFD
+              </button>
+            </div>
+          </div>
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">SLEZAN</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://www.youtube.com/watch?v=aImp1yjKE0U', '_blank');"
+              >
+                YouTube
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://www.instagram.com/p/CxZ9tcTs5f6/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==', '_blank');"
+              >
+                Instagram
+              </button>
+            </div>
+          </div>
+          
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Raspberry Pi</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('<link*>', '_blank');"
+              >
+                Již Brzy
+              </button>         
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('<link*>', '_blank');"
+              >
+                Již Brzy
+              </button>
+            </div>
+          </div>
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-4.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Blender Země</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/BcDvorinka/earth3D/', '_blank')"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://www.instagram.com/p/CyMKFiaMaGn/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==', '_blank')"
+              >
+                Instagram
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="certificates">
+      <p class="section__text__p">Ověření?</p>
+      <h1 class="title">Certifikáty</h1>
+      <div class="certificate-container">
+        <div class="certificate">
+                <img src="./assets/certificate-1.png" alt="Certifikát 1"/>
+            </a>
+            <h2 class="certificate-title">Responsive Web Design</h2>
+            <p><b>HTML, CSS</b> programování <small><i>(základní znalost)</i></small></p>
+            <a href="https://www.freecodecamp.org/certification/Dvorinka/responsive-web-design" target="_blank">Zobrazit certifikát</a>
+        </div>
+    </div>     
+        <div class="certificate">
+          <img src="./assets/certificate-2.png" alt="Certifikát 2" />
+          <h2 class="certificate-title">JavaScript Algorithms and Data Structures</h2>
+          <p><b>JavaScript</b> programování <small><i>(základní znalost)</i></small></p>
+          <a href="https://www.freecodecamp.org/certification/Dvorinka/javascript-algorithms-and-data-structures" target="_blank">Zobrazit certifikát</a>
+        </div>
+        <div class="certificate">
+          <img src="./assets/certificate-3.png" alt="Certifikát 3" />
+          <h2 class="certificate-title">Complete Ethical Hacking Bootcamp 2023: Zero to Mastery</h2>
+          <p><i>45% dokončeno</i></p>
+          <a>Zobrazit certifikát</a><br>
+          <a href="https://www.udemy.com/course/complete-ethical-hacking-bootcamp-zero-to-mastery/" target="_blank">Zobrazit kurz</a>
+        </div>
+        <div class="certificate">
+          <img src="./assets/certificate-4.png" alt="Certifikát 4" />
+          <h2 class="certificate-title">The Complete Web Developer in 2023: Zero to Mastery</h2>
+          <p><i>0% dokončeno</i></p>
+          <a>Zobrazit certifikát</a><br>
+          <a href="https://www.udemy.com/course/the-complete-web-developer-zero-to-mastery/" target="_blank">Zobrazit kurz</a>
+        </div>
+        <div class="certificate">
+          <img src="./assets/certificate-5.png" alt="Certifikát 5" />
+          <h2 class="certificate-title">Web Security & Bug Bounty: Learn Penetration Testing in 2023</h2>
+          <p><i>0% dokončeno</i></p>
+          <a>Zobrazit certifikát</a><br>
+          <a href="https://www.udemy.com/course/web-security-and-bug-bounty-learn-penetration-testing/" target="_blank">Zobrazit kurz</a>
+        </div>
+        <div class="certificate">
+          <img src="./assets/certificate-6.png" alt="Certifikát 6" />
+          <h2 class="certificate-title">Learn Python & Ethical Hacking From Scratch</h2>
+          <p><i>0% dokončeno</i></p>
+          <a>Zobrazit certifikát</a><br>
+          <a href="https://www.udemy.com/course/learn-python-and-ethical-hacking-from-scratch/" target="_blank">Zobrazit kurz</a>
+        </div>
+        <div class="certificate">
+          <img src="./assets/certificate-7.png" alt="Certifikát 7" />
+          <h2 class="certificate-title">The Complete Guide to Freelancing in 2024</h2>
+          <p><i>0% dokončeno</i></p>
+          <a>Zobrazit certifikát</a><br>
+          <a href="https://www.udemy.com/course/complete-guide-to-freelancing-zero-to-mastery/" target="_blank">Zobrazit kurz</a>
+        </div>
+    <section id="contact">
+      <p class="section__text__p1">Kde mě najít?</p>
+      <h1 class="title">Kontaktuj mě</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:contact.dvorak@gmail.com" target="_blank">contact.dvorak@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://linkedin.com/in/tomáš-dvořák-542bb7294" target="_blank">LinkedIn</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/github.png"
+            alt="Github icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://github.com/BcDvorinka" target="_blank">GitHub</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/youtube.png"
+            alt="Youtube icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.youtube.com/@Bc.Dvorinka" target="_blank">YouTube</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/instagram.png"
+            alt="Instagram icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.instagram.com/dv0rinka_/" target="_blank">Instagram - Osobní</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/instagram.png"
+            alt="Instagram icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.instagram.com/dv0rinka_photos/" target="_blank">Instagram - Profesionální</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">O mně</a></li>
+            <li><a href="#experience">Zkušenosti</a></li>
+            <li><a href="#projects">Projekty</a></li>
+            <li><a href="#certificates">Certifikáty</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Tomáš Dvořák. Všechna práva vyhrazena.</p>
+    </footer>
+    <script src="script.js"></script>
+  </div>
+</div>
+</body>
+</html>
